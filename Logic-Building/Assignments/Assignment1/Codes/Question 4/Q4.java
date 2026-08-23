@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Q4
+{
+public static void main(String args[])
+{ 	
+	System.out.println("Give time in 24hrs format");
+	Scanner sc = new Scanner(System.in);
+	int time = sc.nextInt();
+	if (time >= 5 && time < 12) System.out.println("Good Morning");
+	else if (time >=12 && time <= 18) System.out.println("Good Afternoon");
+	else if (time >24) System.out.println("Not a Valid time");
+	else System.out.println("Good Night");
+	
+}
+}
